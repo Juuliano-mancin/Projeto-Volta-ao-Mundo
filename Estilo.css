@@ -1,0 +1,17 @@
+header 
+    {
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-style: solid;
+        border-width: 0.5px;
+
+        background-image: url(img/Header01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 180px;
+    }
+#header01 {text-align: right;  color: bisque; font-size: 20pt;}
+#header02 {text-align: right;  color: bisque; font-size: 10pt;}
+#header03 {text-align: right;  color: goldenrod; font-size: 60pt;}
