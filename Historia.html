@@ -10,9 +10,10 @@
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="estilo.css">
 
-    <title>História</title>
+
+    <title>Uma Breve História de Portugal</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column vh-100">
 
     <header>
         <h3 id="header01">Projeto Volta ao Mundo</h3>
@@ -22,38 +23,236 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" > <img src="img/Icones/Placeholder.png" alt="" width="30" class="d-inline-block align-text-top"> Bootstrap </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand d-flex align-items-center fw-bold text-danger">
+                Explore o site 
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Index.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Homepage </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Index.html">
+                            <img src="img/Icones/Homepage.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Página Home</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Historia.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Uma Breve História de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Historia.html">
+                            <img src="img/Icones/Historia.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Uma Breve História de Portugal</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Gastronomia.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Conheça a Gastronomia e Vinhos de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Gastronomia.html">
+                            <img src="img/Icones/Vinhos.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Gastronomia e Vinhos Lusitanos</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Turismo.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Conheça as Belezas de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Turismo.html">
+                            <img src="img/Icones/Turismo.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Belezas de Portugal</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Sobre.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Sobre e Informações Extras </a>
-                    </li> 
-                </ul> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Sobre.html">
+                            <img src="img/Icones/Info.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Sobre Portugal</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     
-    <main class="container-fluid flex-grow-1">
+    <main class="container-fluid flex-grow-1 text-dark">
         <div class="main-content py-4">
-            <h1> CONTEUDO PRINCIPAL DA PAGINA </h1>
-            <h1> WORK IN PROGRESS </h1>
+            <div class="row">
+                <!-- Coluna dos séculos (navbar) -->
+                <div class="col-md-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        
+                        <button class="nav-link active text-dark bg-light border border-dark mb-2" id="v-pills-12-tab" data-bs-toggle="pill" data-bs-target="#v-pills-12" type="button" role="tab">
+                            Século XII (1100-1200)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-13-tab" data-bs-toggle="pill" data-bs-target="#v-pills-13" type="button" role="tab">
+                            Século XIII (1200-1300)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-14-tab" data-bs-toggle="pill" data-bs-target="#v-pills-14" type="button" role="tab">
+                            Século XIV (1300-1400)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-15-tab" data-bs-toggle="pill" data-bs-target="#v-pills-15" type="button" role="tab">
+                            Século XV (1400-1500)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-16-tab" data-bs-toggle="pill" data-bs-target="#v-pills-16" type="button" role="tab">
+                            Século XVI (1500-1600)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-17-tab" data-bs-toggle="pill" data-bs-target="#v-pills-17" type="button" role="tab">
+                            Século XVII (1600-1700)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-18-tab" data-bs-toggle="pill" data-bs-target="#v-pills-18" type="button" role="tab">
+                            Século XVIII (1700-1800)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-19-tab" data-bs-toggle="pill" data-bs-target="#v-pills-19" type="button" role="tab">
+                            Século XIX (1800-1900)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-20-tab" data-bs-toggle="pill" data-bs-target="#v-pills-20" type="button" role="tab">
+                            Século XX (1900-2000)
+                        </button>
+                        <button class="nav-link text-dark bg-light border border-dark mb-2" id="v-pills-21-tab" data-bs-toggle="pill" data-bs-target="#v-pills-21" type="button" role="tab">
+                            Século XXI (2000-presente)
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Coluna do conteúdo histórico -->
+                <div class="col-md-7">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!-- Século XII -->
+                        <div class="tab-pane fade show active" id="v-pills-12" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XII: O Nascimento de Portugal (1100-1200)</h3>
+                                    <p class="card-text">O século XII assistiu ao surgimento de Portugal como reino independente no contexto da Reconquista Cristã da Península Ibérica. D. Afonso Henriques, após consolidar seu poder na Batalha de São Mamede (1128) contra as forças de sua própria mãe, D. Teresa, autoproclamou-se Rei de Portugal após a lendária Batalha de Ourique (1139), onde teria recebido um sinal divino que legitimou sua coroação.</p>
+                                    <p>O reconhecimento formal da independência veio com o Tratado de Zamora (1143), mediado pelo legado papal Cardeal Guido de Vico, onde Afonso VII de Leão e Castela reconheceu D. Afonso Henriques como rei. Contudo, foi apenas em 1179, através da bula papal "Manifestis Probatum" emitida pelo Papa Alexandre III, que Portugal obteve reconhecimento internacional pleno como reino cristão independente.</p>
+                                    <p>A expansão territorial prosseguiu com a conquista de Santarém (1147) e Lisboa (1147), esta última com auxílio decisivo dos cruzados que seguiam para a Segunda Cruzada. A tomada de Lisboa, após um cerco de 17 semanas, marcou um ponto de virada na formação territorial do reino, estabelecendo a fronteira no rio Tejo. O processo de reconquista continuaria ao longo do século, com avanços significativos no Alentejo.</p>
+                                    <p>Administrativamente, D. Afonso Henriques organizou o reino através de forais que estimulavam o povoamento das terras conquistadas. A Ordem dos Templários recebeu importantes domínios, especialmente na região de Tomar, tornando-se peça fundamental na defesa das fronteiras. Simultaneamente, começou a se formar uma identidade cultural distinta, mesclando influências moçárabes, judaicas e cristãs.</p>
+                                    <p>O final do século viu a consolidação das instituições monárquicas sob D. Sancho I (1185-1211), filho de D. Afonso Henriques, que promoveu o repovoamento do território e fundou várias cidades. A arquitetura românica floresceu, com exemplares notáveis como a Sé Velha de Coimbra, enquanto a língua portuguesa começava a se diferenciar do galego-português.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XIII -->
+                        <div class="tab-pane fade" id="v-pills-13" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XIII: Consolidação do Reino (1200-1300)</h3>
+                                    <p>O século XIII marcou a conclusão da Reconquista em território português com a tomada definitiva do Algarve em 1249, sob o reinado de D. Afonso III. Este período viu a fixação das fronteiras continentais que, com pequenas alterações, permanecem até hoje como as mais antigas da Europa. O Tratado de Alcanizes (1297) com Castela formalizou estes limites, garantindo a soberania portuguesa sobre a região de Riba-Côa.</p>
+                                    <p>As Cortes de Leiria (1254), convocadas por D. Afonso III, representaram um marco no desenvolvimento institucional português, sendo as primeiras a incluir representantes do povo (os "homens bons" das cidades) junto com a nobreza e o clero. Este modelo parlamentar pioneiro refletia a crescente importância da burguesia mercantil no reino e estabeleceu uma tradição de consulta às cortes que caracterizaria a monarquia portuguesa.</p>
+                                    <p>D. Dinis (1279-1325), cognominado "o Lavrador", promoveu profundas transformações no reino. Transferiu a capital de Coimbra para Lisboa (1255), fundou a Universidade de Coimbra em 1290 (originalmente em Lisboa), e estabeleceu o Português como língua oficial da chancelaria real em substituição ao latim. Seu reinado viu também o início da plantação do Pinhal de Leiria, uma das primeiras iniciativas de silvicultura planejada na Europa.</p>
+                                    <p>Economicamente, o século assistiu ao desenvolvimento da agricultura, com a introdução de novas técnicas e culturas, e ao crescimento do comércio marítimo, especialmente com o norte da Europa. A Ordem de Cristo, sucessora dos Templários após sua dissolução em 1312, tornou-se uma importante força econômica e militar, acumulando vastas propriedades e capitais.</p>
+                                    <p>Culturalmente, o gótico português manifestou-se em monumentos como o Mosteiro de Alcobaça, construído para abrigar os restos de D. Pedro I e Inês de Castro, cuja trágica história de amor marcou o imaginário nacional. A literatura começou a florescer, com a produção de cancioneiros e das primeiras crônicas históricas, estabelecendo as bases para a rica tradição literária portuguesa.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XIV -->
+                        <div class="tab-pane fade" id="v-pills-14" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XIV: Crise e Renascimento (1300-1400)</h3>
+                                    <p>O século XIV começou com o reinado de D. Dinis, que continuou suas reformas até 1325, mas terminou em um dos períodos mais turbulentos da história portuguesa. A morte de D. Fernando em 1383 sem herdeiros masculinos desencadeou uma grave crise dinástica, pois sua única filha, D. Beatriz, estava casada com o rei João I de Castela, o que ameaçava a independência portuguesa.</p>
+                                    <p>A resistência foi liderada por D. João, Mestre de Avis, filho ilegítimo de D. Pedro I. Após dois anos de guerra civil e conflitos com Castela, a vitória portuguesa na Batalha de Aljubarrota (1385), sob o comando de Nuno Álvares Pereira, consolidou a independência e estabeleceu a Dinastia de Avis. O Tratado de Windsor (1386) com a Inglaterra criou uma aliança que perdura até hoje, a mais antiga da Europa.</p>
+                                    <p>Este século foi marcado pela catastrófica Peste Negra (1348-49), que dizimou cerca de um terço da população portuguesa, causando profundas transformações sociais e econômicas. A escassez de mão-de-obra levou a mudanças nas relações de trabalho e ao abandono de terras agrícolas, enquanto as cidades ganhavam importância relativa.</p>
+                                    <p>Apesar das crises, houve importantes desenvolvimentos culturais. A prosa historiográfica floresceu com as crônicas de Fernão Lopes, considerado o pai da historiografia portuguesa. A arquitetura gótica evoluiu para o estilo denominado "gótico português", com obras notáveis como o Mosteiro da Batalha, construído para comemorar a vitória em Aljubarrota.</p>
+                                    <p>No plano econômico, a criação da Companhia das Naus (1377) por D. Fernando revela o crescente interesse pelo comércio marítimo. Esta política seria ampliada pelos monarcas seguintes, preparando o terreno para a era dos descobrimentos no século seguinte. O século terminou com Portugal estável sob D. João I, pronto para iniciar sua expansão ultramarina.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XV -->
+                        <div class="tab-pane fade" id="v-pills-15" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XV: A Era dos Descobrimentos (1400-1500)</h3>
+                                    <p>O século XV marcou o início da expansão marítima portuguesa, um projeto sistemático iniciado pelo Infante D. Henrique, filho de D. João I. A conquista de Ceuta em 1415, no norte da África, foi o primeiro passo deste ambicioso projeto que transformaria Portugal na primeira potência global da história.</p>
+                                    <p>A Escola de Sagres, embora seu exato funcionamento seja debatido pelos historiadores, simboliza os avanços náuticos portugueses que permitiram a exploração da costa africana. Navegadores como Gil Eanes (que ultrapassou o Cabo Bojador em 1434), Diogo Cão (que atingiu o Congo em 1482) e Bartolomeu Dias (que dobrou o Cabo da Boa Esperança em 1488) redefiniram os limites do mundo conhecido.</p>
+                                    <p>O Tratado de Tordesilhas (1494), negociado por D. João II, dividiu o mundo entre Portugal e Castela com uma linha a 370 léguas a oeste de Cabo Verde. Este acordo garantiu a Portugal a rota oriental para as Índias e, como se descobriria mais tarde, o território brasileiro. Vasco da Gama completou a ligação marítima para a Índia em 1498, inaugurando a lucrativa rota das especiarias.</p>
+                                    <p>Internamente, o século viu a consolidação do poder real sobre a nobreza, especialmente durante o reinado de D. João II (1481-95), conhecido como "o Príncipe Perfeito". Suas reformas administrativas criaram um estado centralizado e eficiente, capaz de gerenciar o crescente império ultramarino. A Inquisição foi estabelecida em Portugal em 1496, inicialmente como condição para o casamento de D. Manuel I com a filha dos Reis Católicos.</p>
+                                    <p>Culturalmente, o estilo manuelino, uma variação portuguesa do gótico tardio, celebrou os descobrimentos em monumentos como o Mosteiro dos Jerónimos e a Torre de Belém. Lisboa transformou-se em uma das cidades mais cosmopolitas da Europa, atraindo mercadores, cartógrafos e cientistas de todo o continente. O século terminou com Portugal estabelecendo as bases do primeiro império global da história moderna.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XVI -->
+                        <div class="tab-pane fade" id="v-pills-16" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XVI: O Apogeu do Império (1500-1600)</h3>
+                                    <p>O século XVI representou o auge do poderio português, com domínios espalhados por África, Ásia e América. Em 1500, Pedro Álvares Cabral oficialmente descobriu o Brasil, embora haja evidências de expedições anteriores. O comércio de especiarias com a Índia, iniciado por Vasco da Gama, trouxe riquezas imensas, financiando projetos grandiosos como a construção do Convento de Cristo em Tomar.</p>
+                                    <p>Goa tornou-se a capital do Estado Português da Índia em 1510, sob o governo de Afonso de Albuquerque, que também conquistou Malaca (1511) e Ormuz (1515). Estas praças-fortes controlavam as rotas comerciais do Índico, garantindo o monopólio português sobre o comércio de especiarias como pimenta, cravo e canela. Em África, feitorias como São Jorge da Mina garantiam o fluxo de ouro.</p>
+                                    <p>No Brasil, o sistema de capitanias hereditárias foi implementado em 1534, seguido pela criação do governo-geral em 1549. A economia açucareira floresceu no Nordeste, utilizando mão-de-obra escrava africana. A fundação de Salvador (1549) e Rio de Janeiro (1565) consolidou a presença portuguesa na América do Sul, embora o território permanecesse secundário em relação ao império asiático até o século seguinte.</p>
+                                    <p>Culturalmente, o Renascimento português atingiu seu ápice com o poeta Luís de Camões, cuja obra "Os Lusíadas" (1572) celebrou os descobrimentos como epopeia nacional. A arquitetura manuelina evoluiu para o estilo renascentista, enquanto a Universidade de Coimbra foi reformada em 1537, tornando-se centro do humanismo português.</p>
+                                    <p>O século terminou em crise com a morte do jovem rei D. Sebastião na Batalha de Alcácer-Quibir (1578) no norte de África. Sem herdeiros diretos, o trono passou para seu tio-avô, o Cardeal D. Henrique, e após sua morte em 1580, para Filipe II de Espanha, iniciando o período da União Ibérica que duraria até 1640. Apesar disso, a língua e cultura portuguesas já estavam firmemente estabelecidas em quatro continentes.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XVII -->
+                        <div class="tab-pane fade" id="v-pills-17" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XVII: Restauração e Consolidacão (1600-1700)</h3>
+                                    <p>O século XVII começou com Portugal sob domínio espanhol após a crise dinástica de 1580. Durante os 60 anos da União Ibérica, Portugal participou dos conflitos da Espanha na Europa, enquanto seu império ultramarino sofria ataques de holandeses e ingleses. Em 1624, os holandeses chegaram a ocupar Salvador da Bahia, e em 1630 tomaram Pernambuco, estabelecendo o Brasil Holandês.</p>
+                                    <p>A Restauração da Independência em 1º de Dezembro de 1640, liderada por um grupo de nobres e apoiada pela população, colocou D. João IV no trono e iniciou a Dinastia de Bragança. A guerra contra a Espanha duraria 28 anos, terminando apenas em 1668 com o Tratado de Lisboa, que reconheceu definitivamente a independência portuguesa. A vitória na Batalha de Montes Claros (1665) foi decisiva para este desfecho.</p>
+                                    <p>Economicamente, o Brasil tornou-se o centro do império português. A descoberta de ouro em Minas Gerais na década de 1690 transformaria profundamente a economia colonial e metropolitana. A cana-de-açúcar continuou sendo importante, especialmente no Nordeste, enquanto o tabaco e o couro se tornaram produtos de exportação relevantes. Portugal desenvolveu uma política externa de neutralidade pragmática para proteger seus interesses.</p>
+                                    <p>Culturalmente, o Barroco português floresceu, especialmente na talha dourada e na azulejaria. O período ficou conhecido como "Ciclo dos Azulejos", com painéis cobrindo igrejas e palácios. A literatura teve em Padre António Vieira seu maior expoente, com seus sermões e cartas defendendo os direitos dos indígenas e criticando a Inquisição. A arquitetura barroca manifestou-se em obras como o Convento de Mafra.</p>
+                                    <p>Administrativamente, foram criadas instituições como o Conselho Ultramarino (1642) para melhor governar o império. A Companhia Geral do Comércio do Brasil (1649) foi estabelecida para proteger o comércio colonial dos ataques holandeses. O século terminou com Portugal consolidado como nação independente, mas dependente economicamente do ouro brasileiro, que começava a fluir em quantidades crescentes para Lisboa.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XVIII -->
+                        <div class="tab-pane fade" id="v-pills-18" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XVIII: Ouro e Reformas (1700-1800)</h3>
+                                    <p>O século XVIII foi marcado pelo fluxo de ouro e diamantes do Brasil, que financiou grandes projetos em Portugal. O Terremoto de 1755 destruiu Lisboa e foi um dos eventos mais traumáticos da história portuguesa. O Marquês de Pombal, ministro de D. José I, liderou a reconstrução da cidade em estilo pombalino, um dos primeiros exemplos de construção anti-sísmica no mundo.</p>
+                                    <p>As reformas pombalinas modernizaram Portugal em várias frentes: na educação, com a reforma da Universidade de Coimbra; na economia, com a criação de companhias monopolistas; e na administração, com a centralização do poder. A expulsão dos jesuítas em 1759 foi parte desta política regalista que buscava submeter a Igreja ao Estado. O comércio do vinha do Porto com a Inglaterra tornou-se vital para a economia.</p>
+                                    <p>No Brasil, a descoberta de ouro em Minas Gerais levou à criação da Intendência das Minas (1702) e ao sistema de capitação para cobrança de impostos. A Inconfidência Mineira (1789), inspirada pelo Iluminismo e pela independência dos EUA, foi o primeiro movimento separatista importante, embora fracassado. A transferência da corte portuguesa para o Rio de Janeiro em 1807, fugindo das invasões napoleônicas, mudaria para sempre a relação entre metrópole e colônia.</p>
+                                    <p>Cientificamente, Portugal participou do esforço iluminista, com expedições naturalistas como a de Alexandre Rodrigues Ferreira ao Amazonas. A Academia Real das Ciências de Lisboa foi fundada em 1779. Culturalmente, o estilo rococó substituiu o barroco, com exemplares notáveis como a Basílica da Estrela em Lisboa. A literatura teve em Bocage seu maior representante, com poesia que transitava entre o arcadismo e o pré-romantismo.</p>
+                                    <p>O final do século viu Portugal envolvido nas Guerras Napoleônicas, que levaram à invasão francesa em 1807 e à fuga da família real para o Brasil. Esta mudança, inicialmente pensada como temporária, teria consequências duradouras, elevando o Brasil a Reino Unido em 1815 e preparando o caminho para sua independência em 1822. O século terminou com Portugal em crise, sua economia dependente do Brasil e sua política externa subordinada à Inglaterra.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XIX -->
+                        <div class="tab-pane fade" id="v-pills-19" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XIX: Revoluções e Liberalismo (1800-1900)</h3>
+                                    <p>O século XIX começou com Portugal ocupado por tropas napoleônicas e a corte no Rio de Janeiro. A Revolução Liberal do Porto (1820) exigiu o retorno de D. João VI e a elaboração de uma constituição, promulgada em 1822. Esta primeira constituição portuguesa estabelecia uma monarquia constitucional, mas foi revogada após a Vilafrancada (1823), um golpe absolutista liderado por D. Miguel.</p>
+                                    <p>A independência do Brasil em 1822, proclamada por D. Pedro I (filho de D. João VI), privou Portugal de sua principal fonte de riqueza. A Guerra Civil Portuguesa (1828-1834) entre liberais (apoiados por D. Pedro) e absolutistas (liderados por D. Miguel) terminou com a vitória liberal e a instauração definitiva do regime constitucional. A Carta Constitucional de 1826, outorgada por D. Pedro IV, estabeleceu um compromisso entre liberalismo e tradição.</p>
+                                    <p>O período da Regeneração (1851-1868) trouxe estabilidade política e desenvolvimento econômico, com investimentos em infraestrutura como estradas, pontes e ferrovias. Fontes Pereira de Melo foi a figura central deste período. A abolição definitiva da escravatura nas colônias portuguesas ocorreu em 1869, embora formas de trabalho forçado tenham persistido. A exploração colonial africana intensificou-se após a Conferência de Berlim (1885).</p>
+                                    <p>Culturalmente, o Romantismo português teve em Almeida Garrett e Alexandre Herculano seus maiores expoentes. A arquitetura neomanuelina, como mostra o Palácio da Pena em Sintra, celebrou o passado glorioso dos descobrimentos. O Realismo e Naturalismo manifestaram-se na obra de Eça de Queirós, considerado o maior romancista português do século. A imprensa tornou-se mais diversificada e influente.</p>
+                                    <p>O final do século foi marcado pela crise do ultimato britânico de 1890 (que forçou Portugal a abandonar suas pretensões no mapa cor-de-rosa africano), pelo regicídio de 1908 (que matou o rei D. Carlos e o príncipe herdeiro) e pela Proclamação da República em 5 de Outubro de 1910. A monarquia constitucional, incapaz de resolver os problemas econômicos e de manter a coesão do império, deu lugar à Primeira República Portuguesa.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XX -->
+                        <div class="tab-pane fade" id="v-pills-20" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XX: Ditadura e Democracia (1900-2000)</h3>
+                                    <p>A Primeira República (1910-1926) foi um período de grande instabilidade política, com 45 governos em 16 anos. Portugal participou da Primeira Guerra Mundial ao lado dos Aliados, enviando tropas para África e Flandres. A crise econômica do pós-guerra, combinada com divisões políticas profundas, criou condições para o golpe militar de 1926 que estabeleceu uma ditadura.</p>
+                                    <p>António de Oliveira Salazar, inicialmente como ministro das Finanças e depois como presidente do Conselho (1932-1968), construiu o Estado Novo, um regime autoritário, corporativista e colonialista. A Constituição de 1933 formalizou este sistema que mantinha Portugal neutro na Segunda Guerra Mundial, mas mantinha estreitas relações com a Espanha franquista e o Vaticano. A polícia política (PIDE) reprimia qualquer oposição.</p>
+                                    <p>Os anos 1960 viram o início das guerras coloniais em Angola, Guiné-Bissau e Moçambique, que durariam até 1974 e consumiriam 40% do orçamento nacional. Economicamente, Portugal permaneceu predominantemente agrícola até os anos 1950, quando começou um processo de industrialização limitado. A emigração em massa para França e outros países europeus aliviou as pressões sociais internas.</p>
+                                    <p>A Revolução dos Cravos em 25 de Abril de 1974, liderada pelo Movimento das Forças Armadas, derrubou o regime sem violência e restaurou a democracia. O processo de descolonização foi rápido e conturbado, com a independência de todas as colônias africanas até 1975. Timor-Leste foi invadido pela Indonésia após declarar independência em 1975, situação que persistiria até 1999.</p>
+                                    <p>A adesão à CEE (atual UE) em 1986 marcou a integração definitiva de Portugal na Europa democrática. Os governos do Partido Socialista e do Partido Social Democrata alternaram-se no poder, implementando reformas econômicas e modernizando o país. A Expo'98 em Lisboa simbolizou esta nova fase, assim como a adoção do euro em 2002. O século terminou com Portugal como uma democracia consolidada, embora enfrentando desafios de desenvolvimento econômico e coesão social.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Século XXI -->
+                        <div class="tab-pane fade" id="v-pills-21" role="tabpanel">
+                            <div class="card bg-light border border-dark">
+                                <div class="card-body">
+                                    <h3 class="card-title mb-4">Século XXI: Desafios e Oportunidades (2000-presente)</h3>
+                                    <p>O início do século XXI viu Portugal enfrentar graves desafios econômicos. A crise financeira global de 2008 atingiu duramente o país, levando a um resgate financeiro pela Troika (FMI, BCE e UE) em 2011 no valor de 78 bilhões de euros. As medidas de austeridade implementadas pelo governo tiveram impacto social profundo, com aumento do desemprego e emigração, especialmente de jovens qualificados.</p>
+                                    <p>Apesar das dificuldades, Portugal recuperou estabilidade econômica a partir de 2014, destacando-se no turismo (que representa cerca de 15% do PIB) e nas energias renováveis. Em 2016, o país foi pioneiro ao funcionar quatro dias consecutivos apenas com energia renovável. A reconversão de antigas áreas industriais em polos tecnológicos, como o Parque das Nações em Lisboa, atraiu investimentos estrangeiros.</p>
+                                    <p>Politicamente, o século tem sido marcado por governos minoritários e coligações variadas. Em 2015, pela primeira vez na história democrática, um governo eleito foi substituído sem eleições, através de uma aliança parlamentar de esquerda. Marcelo Rebelo de Sousa, eleito presidente em 2016 e reeleito em 2021, tornou-se uma figura popular e moderadora da vida política.</p>
+                                    <p>Socialmente, Portugal enfrenta o desafio do envelhecimento populacional e da baixa natalidade. A imigração, especialmente de brasileiros e de países africanos lusófonos, tem ajudado a compensar o declínio demográfico. A diáspora portuguesa mantém forte influência, com comunidades significativas em França, Suíça, EUA e Brasil. A língua portuguesa consolidou-se como uma das mais faladas no mundo, com crescimento particular em África.</p>
+                                    <p>No plano internacional, Portugal mantém seu papel de ponte entre Europa, África e América Latina. A CPLP (Comunidade dos Países de Língua Portuguesa) ganhou relevância como fórum de cooperação. Os desafios atuais incluem a transição energética, a modernização da economia, a sustentabilidade do sistema de pensões e a manutenção da coesão social num contexto global incerto. Apesar dos obstáculos, Portugal entra na terceira década do século XXI como uma democracia estável e um país com qualidade de vida reconhecida internacionalmente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
@@ -61,10 +260,7 @@
         <div class="container-fluid"> 
             <div class="row"> 
                 <div class="col-12 text-end">
-                    © 2025 Feito por <strong>Juliano Mancini</strong> Redes Sociais e Informações de Contato |  
-                    <img src="img/Icones/Placeholder.png " alt="" width="30"> 
-                    <img src="img/Icones/Placeholder.png " alt="" width="30">
-                    <img src="img/Icones/Placeholder.png " alt="" width="30"> 
+                    © 2025 Feito por <strong>Juliano Mancini</strong> Redes Sociais
                 </div>
             </div>
         </div>
