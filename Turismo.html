@@ -10,9 +10,10 @@
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="estilo.css">
 
-    <title>Turismo</title>
+
+    <title>Belezas de Portugal</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column vh-100">
 
     <header>
         <h3 id="header01">Projeto Volta ao Mundo</h3>
@@ -22,49 +23,241 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" > <img src="img/Icones/Placeholder.png" alt="" width="30" class="d-inline-block align-text-top"> Bootstrap </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand d-flex align-items-center fw-bold text-danger">
+                Explore o site 
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Index.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Homepage </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Index.html">
+                            <img src="img/Icones/Homepage.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Página Home</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Historia.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Uma Breve História de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Historia.html">
+                            <img src="img/Icones/Historia.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Uma Breve História de Portugal</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Gastronomia.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Conheça a Gastronomia e Vinhos de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Gastronomia.html">
+                            <img src="img/Icones/Vinhos.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Gastronomia e Vinhos Lusitanos</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Turismo.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Conheça as Belezas de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Turismo.html">
+                            <img src="img/Icones/Turismo.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Belezas de Portugal</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Sobre.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Sobre e Informações Extras </a>
-                    </li> 
-                </ul> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Sobre.html">
+                            <img src="img/Icones/Info.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Sobre Portugal</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    
+
     <main class="container-fluid flex-grow-1">
-        <div class="main-content py-4">
-            <h1> CONTEUDO PRINCIPAL DA PAGINA </h1>
-            <h1> WORK IN PROGRESS </h1>
+        <!-- Linha 01 - Belezas Históricas -->
+        <div class="row mb-5">
+            <!-- Coluna 01 - Texto sobre belezas históricas (agora col-4) -->
+            <div class="col-md-4">
+                <h2 class="mb-4">As Belezas Históricas de Portugal</h2>
+                <p class="lead">
+                    Portugal é um país repleto de história, com cidades encantadoras que preservam séculos de cultura. 
+                    Desde os castelos medievais até os azulejos tradicionais, cada canto conta uma história única.
+                </p>
+                <p>
+                    Lisboa, a capital, mistura o antigo e o moderno, enquanto o Porto encanta com suas pontes e vinhas. 
+                    Sintra, com seus palácios de contos de fadas, e Évora, patrimônio da UNESCO, são paradas obrigatórias.
+                </p>
+            </div>
+    
+            <!-- Coluna 02 - Cards (agora col-8) -->
+            <div class="col-md-5">
+                <div class="row g-3">
+                    <!-- Card 01 (Grande) -->
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/600x300?text=Castelo+de+Sintra" class="card-img-top" alt="Castelo de Sintra">
+                            <div class="card-body">
+                                <div class="accordion" id="accordion1">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                                Castelo de Sintra
+                                            </button>
+                                        </h2>
+                                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                            <div class="accordion-body">
+                                                O Palácio da Pena, em Sintra, é um dos exemplos mais incríveis da arquitetura romântica do século XIX, com cores vibrantes e jardins exuberantes.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 02 e 03 (Pequenos, lado a lado) -->
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x200?text=Torre+de+Belém" class="card-img-top" alt="Torre de Belém">
+                            <div class="card-body">
+                                <div class="accordion" id="accordion2">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                                Torre de Belém
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                                            <div class="accordion-body">
+                                                Símbolo da Era dos Descobrimentos, esta fortificação à beira do Tejo é Patrimônio Mundial da UNESCO.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x200?text=Mosteiro+dos+Jerónimos" class="card-img-top" alt="Mosteiro dos Jerónimos">
+                            <div class="card-body">
+                                <div class="accordion" id="accordion3">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                                Mosteiro dos Jerónimos
+                                            </button>
+                                        </h2>
+                                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                                            <div class="accordion-body">
+                                                Obra-prima do estilo manuelino, abriga os túmulos de figuras históricas como Vasco da Gama.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Linha 02 - Belezas Naturais (estrutura invertida) -->
+        <div class="row mb-5">
+            <!-- Coluna 01 - Cards (agora primeiro) -->
+            <div class="col-md-5">
+                <div class="row g-3">
+                    <!-- Card 01 (Grande) -->
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/600x300?text=Algarve" class="card-img-top" alt="Algarve">
+                            <div class="card-body">
+                                <div class="accordion" id="accordion4">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                                Praias do Algarve
+                                            </button>
+                                        </h2>
+                                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordion4">
+                                            <div class="accordion-body">
+                                                As falésias douradas e águas cristalinas do Algarve são um dos maiores tesouros naturais de Portugal.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Card 02 e 03 (Pequenos, lado a lado) -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x200?text=Douro" class="card-img-top" alt="Vale do Douro">
+                            <div class="card-body">
+                                <div class="accordion" id="accordion5">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                                Vale do Douro
+                                            </button>
+                                        </h2>
+                                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordion5">
+                                            <div class="accordion-body">
+                                                Patrimônio Mundial da UNESCO, este vale esculpido pelo rio Douro é famoso por seus vinhedos em socalcos.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/300x200?text=Gerês" class="card-img-top" alt="Parque Nacional Peneda-Gerês">
+                            <div class="card-body">
+                                <div class="accordion" id="accordion6">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                                                Parque Nacional Peneda-Gerês
+                                            </button>
+                                        </h2>
+                                        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordion6">
+                                            <div class="accordion-body">
+                                                Único parque nacional de Portugal, oferece paisagens deslumbrantes de montanhas, rios e vida selvagem.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Coluna 02 - Texto sobre belezas naturais (agora segundo) -->
+            <div class="col-md-4">
+                <h2 class="mb-4">As Belezas Naturais de Portugal</h2>
+                <p class="lead">
+                    Portugal não é apenas história - sua natureza deslumbrante é um convite à aventura e ao relaxamento.
+                </p>
+                <p>
+                    Do Algarve, com suas praias de sonho, ao verdejante Minho, passando pelo majestoso Vale do Douro, 
+                    o país oferece uma diversidade impressionante de paisagens em um território relativamente pequeno.
+                </p>
+                <p>
+                    O Parque Nacional Peneda-Gerês, as grutas de Mira de Aire e as ilhas dos Açores e Madeira completam 
+                    este mosaico de belezas naturais que fazem de Portugal um destino completo.
+                </p>
+            </div>
         </div>
     </main>
     
+
+
     <footer class="bg-light py-3 mt-auto">
         <div class="container-fluid"> 
             <div class="row"> 
                 <div class="col-12 text-end">
-                    © 2025 Feito por <strong>Juliano Mancini</strong> Redes Sociais e Informações de Contato |  
-                    <img src="img/Icones/Placeholder.png " alt="" width="30"> 
-                    <img src="img/Icones/Placeholder.png " alt="" width="30">
-                    <img src="img/Icones/Placeholder.png " alt="" width="30"> 
+                    © 2025 Feito por <strong>Juliano Mancini</strong> Redes Sociais
                 </div>
             </div>
         </div>
