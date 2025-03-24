@@ -10,9 +10,10 @@
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="estilo.css">
 
-    <title>Gastronomia</title>
+
+    <title>Gastronomia Lusitana</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column vh-100">
 
     <header>
         <h3 id="header01">Projeto Volta ao Mundo</h3>
@@ -22,49 +23,668 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" > <img src="img/Icones/Placeholder.png" alt="" width="30" class="d-inline-block align-text-top"> Bootstrap </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand d-flex align-items-center fw-bold text-danger">
+                Explore o site 
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Index.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Homepage </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Index.html">
+                            <img src="img/Icones/Homepage.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Página Home</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Historia.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Uma Breve História de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Historia.html">
+                            <img src="img/Icones/Historia.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Uma Breve História de Portugal</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Gastronomia.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Conheça a Gastronomia e Vinhos de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Gastronomia.html">
+                            <img src="img/Icones/Vinhos.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Gastronomia e Vinhos Lusitanos</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Turismo.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Conheça as Belezas de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Turismo.html">
+                            <img src="img/Icones/Turismo.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Belezas de Portugal</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Sobre.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Sobre e Informações Extras </a>
-                    </li> 
-                </ul> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Sobre.html">
+                            <img src="img/Icones/Info.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Sobre Portugal</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+
+    <main class="container-fluid bg-light">
+        <div class="row g-4 py-4">
+            <!-- COLUNA PRINCIPAL (TAMANHO 6) -->
+            <div class="col-lg-6">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <!-- Seção de Receitas -->
+                    <h1 class="mb-4 border-bottom pb-2">Gastronomia Portuguesa</h1>
+                    <p class="lead mb-4">Explore as delícias culinárias que fazem de Portugal um destino gastronômico único.</p>
+                    
+                    <!-- Receitas -->
+                    <h2 class="h4 mb-3 text-primary">Receitas Tradicionais</h2>
+                    
+                    <!-- Primeira Linha de Receitas -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                        <!-- Receita 1 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/bacalhau-a-bras.jpg" class="card-img-top" alt="Bacalhau à Brás" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Bacalhau à Brás</h3>
+                                    <div class="accordion accordion-flush" id="accordion1">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historia1">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historia1" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                                <div class="accordion-body small">
+                                                    <p>Clássico lisboeta do século XIX que transforma bacalhau seco em iguaria cremosa com ovos e batata palha.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#receita1">
+                                                    Receita
+                                                </button>
+                                            </h4>
+                                            <div id="receita1" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                                                <div class="accordion-body small">
+                                                    <h6>Ingredientes:</h6>
+                                                    <ul>
+                                                        <li>400g bacalhau</li>
+                                                        <li>4 ovos</li>
+                                                        <li>500g batata palha</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
     
-    <main class="container-fluid flex-grow-1">
-        <div class="main-content py-4">
-            <h1> CONTEUDO PRINCIPAL DA PAGINA </h1>
-            <h1> WORK IN PROGRESS </h1>
+                        <!-- Receita 2 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/francesinha.jpg" class="card-img-top" alt="Francesinha" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Francesinha</h3>
+                                    <div class="accordion accordion-flush" id="accordion2">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historia2">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historia2" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                                                <div class="accordion-body small">
+                                                    <p>Ícone do Porto criado nos anos 50, inspirado no croque-monsieur mas com personalidade portuguesa.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#receita2">
+                                                    Receita
+                                                </button>
+                                            </h4>
+                                            <div id="receita2" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                                                <div class="accordion-body small">
+                                                    <h6>Ingredientes:</h6>
+                                                    <ul>
+                                                        <li>Pão</li>
+                                                        <li>Vários tipos de carne</li>
+                                                        <li>Molho especial</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Receita 3 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/caldo-verde.jpg" class="card-img-top" alt="Caldo Verde" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Caldo Verde</h3>
+                                    <div class="accordion accordion-flush" id="accordion3">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historia3">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historia3" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                                                <div class="accordion-body small">
+                                                    <p>Sopa tradicional do Minho, tornada nacional, perfeita para festas e noites frias.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#receita3">
+                                                    Receita
+                                                </button>
+                                            </h4>
+                                            <div id="receita3" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                                                <div class="accordion-body small">
+                                                    <h6>Ingredientes:</h6>
+                                                    <ul>
+                                                        <li>Couve-galega</li>
+                                                        <li>Batata</li>
+                                                        <li>Chouriço</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Segunda Linha de Receitas -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                        <!-- Receita 4 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/leitão-bairrada.jpg" class="card-img-top" alt="Leitão da Bairrada" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Leitão da Bairrada</h3>
+                                    <div class="accordion accordion-flush" id="accordion4">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historia4">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historia4" class="accordion-collapse collapse" data-bs-parent="#accordion4">
+                                                <div class="accordion-body small">
+                                                    <p>Tradição da região da Bairrada desde o século XIX, assado em forno a lenha com tempero secreto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#receita4">
+                                                    Receita
+                                                </button>
+                                            </h4>
+                                            <div id="receita4" class="accordion-collapse collapse" data-bs-parent="#accordion4">
+                                                <div class="accordion-body small">
+                                                    <h6>Ingredientes:</h6>
+                                                    <ul>
+                                                        <li>Leitão jovem</li>
+                                                        <li>Sal grosso</li>
+                                                        <li>Banha</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Receita 5 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/arroz-marisco.jpg" class="card-img-top" alt="Arroz de Marisco" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Arroz de Marisco</h3>
+                                    <div class="accordion accordion-flush" id="accordion5">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historia5">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historia5" class="accordion-collapse collapse" data-bs-parent="#accordion5">
+                                                <div class="accordion-body small">
+                                                    <p>Prato litorâneo que celebra a abundância de frutos do mar na costa portuguesa.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#receita5">
+                                                    Receita
+                                                </button>
+                                            </h4>
+                                            <div id="receita5" class="accordion-collapse collapse" data-bs-parent="#accordion5">
+                                                <div class="accordion-body small">
+                                                    <h6>Ingredientes:</h6>
+                                                    <ul>
+                                                        <li>Mistura de mariscos</li>
+                                                        <li>Arroz carolino</li>
+                                                        <li>Coentros</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Receita 6 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/pasteis-nata.jpg" class="card-img-top" alt="Pastéis de Nata" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Pastéis de Nata</h3>
+                                    <div class="accordion accordion-flush" id="accordion6">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historia6">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historia6" class="accordion-collapse collapse" data-bs-parent="#accordion6">
+                                                <div class="accordion-body small">
+                                                    <p>Criados no Mosteiro dos Jerónimos no século XIX, hoje símbolo da doçaria portuguesa.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#receita6">
+                                                    Receita
+                                                </button>
+                                            </h4>
+                                            <div id="receita6" class="accordion-collapse collapse" data-bs-parent="#accordion6">
+                                                <div class="accordion-body small">
+                                                    <h6>Ingredientes:</h6>
+                                                    <ul>
+                                                        <li>Massa folhada</li>
+                                                        <li>Gemas</li>
+                                                        <li>Nata</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Seção de Vinhos -->
+                    <h2 class="h4 mb-3 text-primary border-top pt-4">Vinhos Portugueses</h2>
+                    <p class="mb-4">Conheça os vinhos que colocam Portugal no mapa mundial da enologia.</p>
+                    
+                    <!-- Primeira Linha de Vinhos -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                        <!-- Vinho 1 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/vinho-porto.jpg" class="card-img-top" alt="Vinho do Porto" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Vinho do Porto</h3>
+                                    <div class="accordion accordion-flush" id="accordionVinho1">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historiaVinho1">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historiaVinho1" class="accordion-collapse collapse" data-bs-parent="#accordionVinho1">
+                                                <div class="accordion-body small">
+                                                    <p>O Vinho do Porto nasceu no século XVII quando os ingleses, em conflito com a França, buscaram alternativas nos vinhos portugueses.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristicasVinho1">
+                                                    Características
+                                                </button>
+                                            </h4>
+                                            <div id="caracteristicasVinho1" class="accordion-collapse collapse" data-bs-parent="#accordionVinho1">
+                                                <div class="accordion-body small">
+                                                    <h6>Tipos:</h6>
+                                                    <ul>
+                                                        <li>Ruby (jovem e frutado)</li>
+                                                        <li>Tawny (envelhecido)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Vinho 2 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/vinho-verde.jpg" class="card-img-top" alt="Vinho Verde" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Vinho Verde</h3>
+                                    <div class="accordion accordion-flush" id="accordionVinho2">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historiaVinho2">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historiaVinho2" class="accordion-collapse collapse" data-bs-parent="#accordionVinho2">
+                                                <div class="accordion-body small">
+                                                    <p>Produzido no noroeste de Portugal desde o tempo dos romanos, o "verde" refere-se à juventude do vinho.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristicasVinho2">
+                                                    Características
+                                                </button>
+                                            </h4>
+                                            <div id="caracteristicasVinho2" class="accordion-collapse collapse" data-bs-parent="#accordionVinho2">
+                                                <div class="accordion-body small">
+                                                    <h6>Variedades:</h6>
+                                                    <ul>
+                                                        <li>Alvarinho (aromático)</li>
+                                                        <li>Loureiro (floral)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Vinho 3 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/dão.jpg" class="card-img-top" alt="Vinho do Dão" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Vinho do Dão</h3>
+                                    <div class="accordion accordion-flush" id="accordionVinho3">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historiaVinho3">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historiaVinho3" class="accordion-collapse collapse" data-bs-parent="#accordionVinho3">
+                                                <div class="accordion-body small">
+                                                    <p>Produzido na região montanhosa do Dão desde o século XII, conhecidos como "os Borgonhas de Portugal".</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristicasVinho3">
+                                                    Características
+                                                </button>
+                                            </h4>
+                                            <div id="caracteristicasVinho3" class="accordion-collapse collapse" data-bs-parent="#accordionVinho3">
+                                                <div class="accordion-body small">
+                                                    <h6>Castas:</h6>
+                                                    <ul>
+                                                        <li>Touriga Nacional</li>
+                                                        <li>Encruzado</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Segunda Linha de Vinhos -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Vinho 4 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/alentejo.jpg" class="card-img-top" alt="Vinho do Alentejo" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Vinho do Alentejo</h3>
+                                    <div class="accordion accordion-flush" id="accordionVinho4">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historiaVinho4">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historiaVinho4" class="accordion-collapse collapse" data-bs-parent="#accordionVinho4">
+                                                <div class="accordion-body small">
+                                                    <p>A moderna viticultura surgiu nos anos 1980. Hoje é a região mais dinâmica de Portugal.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristicasVinho4">
+                                                    Características
+                                                </button>
+                                            </h4>
+                                            <div id="caracteristicasVinho4" class="accordion-collapse collapse" data-bs-parent="#accordionVinho4">
+                                                <div class="accordion-body small">
+                                                    <h6>Destaques:</h6>
+                                                    <ul>
+                                                        <li>Aragonez</li>
+                                                        <li>Antão Vaz</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Vinho 5 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/madeira.jpg" class="card-img-top" alt="Vinho da Madeira" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Vinho da Madeira</h3>
+                                    <div class="accordion accordion-flush" id="accordionVinho5">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historiaVinho5">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historiaVinho5" class="accordion-collapse collapse" data-bs-parent="#accordionVinho5">
+                                                <div class="accordion-body small">
+                                                    <p>Descoberto acidentalmente no século XVI quando o vinho era aquecido durante as longas viagens marítimas.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristicasVinho5">
+                                                    Características
+                                                </button>
+                                            </h4>
+                                            <div id="caracteristicasVinho5" class="accordion-collapse collapse" data-bs-parent="#accordionVinho5">
+                                                <div class="accordion-body small">
+                                                    <h6>Estilos:</h6>
+                                                    <ul>
+                                                        <li>Sercial (seco)</li>
+                                                        <li>Malmsey (doce)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Vinho 6 -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/douro.jpg" class="card-img-top" alt="Vinho do Douro" style="height: 180px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">Vinho do Douro</h3>
+                                    <div class="accordion accordion-flush" id="accordionVinho6">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#historiaVinho6">
+                                                    História
+                                                </button>
+                                            </h4>
+                                            <div id="historiaVinho6" class="accordion-collapse collapse" data-bs-parent="#accordionVinho6">
+                                                <div class="accordion-body small">
+                                                    <p>A região demarcada mais antiga do mundo (1756), originalmente para produção de Porto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header">
+                                                <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#caracteristicasVinho6">
+                                                    Características
+                                                </button>
+                                            </h4>
+                                            <div id="caracteristicasVinho6" class="accordion-collapse collapse" data-bs-parent="#accordionVinho6">
+                                                <div class="accordion-body small">
+                                                    <h6>Castas:</h6>
+                                                    <ul>
+                                                        <li>Touriga Nacional</li>
+                                                        <li>Tinta Roriz</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- COLUNA SECUNDÁRIA (TAMANHO 3) -->
+            <div class="col-lg-3">
+                <div class="p-4 bg-white rounded shadow-sm sticky-top" style="top: 20px;">
+                    <h2 class="mb-3 border-bottom pb-2">Sabores de Portugal</h2>
+                    <h3 class="h5 mb-4 text-muted">Uma Viagem Gastronômica</h3>
+                    
+                    <div class="mb-4">
+                        <h4 class="h6">Destaques:</h4>
+                        <ul class="small">
+                            <li class="mb-2">1001 formas de preparar bacalhau</li>
+                            <li class="mb-2">Doces conventuais tradicionais</li>
+                            <li class="mb-2">Vinhos com Denominação de Origem</li>
+                            <li>Produtos regionais únicos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="h6">Regiões Gastronômicas:</h4>
+                        <div class="accordion accordion-flush small" id="accordionRegioes">
+                            <div class="accordion-item">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse" data-bs-target="#norte">
+                                        Norte
+                                    </button>
+                                </h5>
+                                <div id="norte" class="accordion-collapse collapse" data-bs-parent="#accordionRegioes">
+                                    <div class="accordion-body">
+                                        <p>Francesinha, Tripas à moda do Porto, Vinho Verde</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse" data-bs-target="#centro">
+                                        Centro
+                                    </button>
+                                </h5>
+                                <div id="centro" class="accordion-collapse collapse" data-bs-parent="#accordionRegioes">
+                                    <div class="accordion-body">
+                                        <p>Leitão da Bairrada, Queijo da Serra, Vinho do Dão</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse" data-bs-target="#lisboa">
+                                        Lisboa
+                                    </button>
+                                </h5>
+                                <div id="lisboa" class="accordion-collapse collapse" data-bs-parent="#accordionRegioes">
+                                    <div class="accordion-body">
+                                        <p>Pastéis de Belém, Bacalhau à Brás, Ginjinha</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse" data-bs-target="#alentejo">
+                                        Alentejo
+                                    </button>
+                                </h5>
+                                <div id="alentejo" class="accordion-collapse collapse" data-bs-parent="#accordionRegioes">
+                                    <div class="accordion-body">
+                                        <p>Açorda à Alentejana, Carnes de Porco, Vinho do Alentejo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header">
+                                    <button class="accordion-button collapsed py-1" type="button" data-bs-toggle="collapse" data-bs-target="#algarve">
+                                        Algarve
+                                    </button>
+                                </h5>
+                                <div id="algarve" class="accordion-collapse collapse" data-bs-parent="#accordionRegioes">
+                                    <div class="accordion-body">
+                                        <p>Cataplana, Mariscos, Doces de Amêndoa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-top pt-3">
+                        <h4 class="h6">Curiosidades:</h4>
+                        <ul class="small">
+                            <li class="mb-2">Portugal tem a mais antiga região demarcada de vinho do mundo (Douro, 1756)</li>
+                            <li>O pastel de nata foi eleito um dos doces mais populares do mundo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
+
+
     <footer class="bg-light py-3 mt-auto">
         <div class="container-fluid"> 
             <div class="row"> 
                 <div class="col-12 text-end">
-                    © 2025 Feito por <strong>Juliano Mancini</strong> Redes Sociais e Informações de Contato |  
-                    <img src="img/Icones/Placeholder.png " alt="" width="30"> 
-                    <img src="img/Icones/Placeholder.png " alt="" width="30">
-                    <img src="img/Icones/Placeholder.png " alt="" width="30"> 
+                    © 2025 Feito por <strong>Juliano Mancini</strong> Redes Sociais
                 </div>
             </div>
         </div>
