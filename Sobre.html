@@ -10,9 +10,10 @@
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="estilo.css">
 
+
     <title>Sobre</title>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column vh-100">
 
     <header>
         <h3 id="header01">Projeto Volta ao Mundo</h3>
@@ -22,49 +23,235 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" > <img src="img/Icones/Placeholder.png" alt="" width="30" class="d-inline-block align-text-top"> Bootstrap </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand d-flex align-items-center fw-bold text-danger">
+                Explore o site 
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Index.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Homepage </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Index.html">
+                            <img src="img/Icones/Homepage.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Página Home</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Historia.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Uma Breve História de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Historia.html">
+                            <img src="img/Icones/Historia.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Uma Breve História de Portugal</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Gastronomia.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Conheça a Gastronomia e Vinhos de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Gastronomia.html">
+                            <img src="img/Icones/Vinhos.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Gastronomia e Vinhos Lusitanos</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Turismo.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Conheça as Belezas de Portugal </a>
-                    </li> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Turismo.html">
+                            <img src="img/Icones/Turismo.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Belezas de Portugal</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="Sobre.html">  <img src="img/Icones/Placeholder.png " alt="" width="30">  Sobre e Informações Extras </a>
-                    </li> 
-                </ul> 
+                        <a class="nav-link active d-flex align-items-center gap-2 py-2" href="Sobre.html">
+                            <img src="img/Icones/Info.png" alt="Home" width="40">
+                            <span class="nav-text fw-bold text-success">Sobre Portugal</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    
-    <main class="container-fluid flex-grow-1">
-        <div class="main-content py-4">
-            <h1> CONTEUDO PRINCIPAL DA PAGINA </h1>
-            <h1> WORK IN PROGRESS </h1>
+
+    <main class="container-fluid bg-light">
+        <div class="row g-4 py-4">
+            <!-- COLUNA PRINCIPAL -->
+            <div class="col-lg-8">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <!-- Seção Principal -->
+                    <h1 class="mb-4 border-bottom pb-2">Portugal: Dados e Curiosidades</h1>
+                    
+                    <!-- Linha com 3 cards -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                        <!-- Card 1 - Localização -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title h5 text-primary">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="#" alt="Localização" width="30" height="30" class="me-2"> Localização
+                                        </a>
+                                    </h3>
+                                    <ul class="list-group list-group-flush small">
+                                        <li class="list-group-item">Europa (Sudoeste)</li>
+                                        <li class="list-group-item">Fronteira com Espanha</li>
+                                        <li class="list-group-item">Costa Atlântica</li>
+                                        <li class="list-group-item">92.212 km²</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 - Política -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title h5 text-primary">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="#" alt="Política" width="30" height="30" class="me-2"> Política
+                                        </a>
+                                    </h3>
+                                    <ul class="list-group list-group-flush small">
+                                        <li class="list-group-item">República</li>
+                                        <li class="list-group-item">Capital: Lisboa</li>
+                                        <li class="list-group-item">Membro da UE</li>
+                                        <li class="list-group-item">Moeda: Euro</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3 - População -->
+                        <div class="col">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title h5 text-primary">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="#" alt="População" width="30" height="30" class="me-2"> População
+                                        </a>
+                                    </h3>
+                                    <ul class="list-group list-group-flush small">
+                                        <li class="list-group-item">10,3 milhões</li>
+                                        <li class="list-group-item">Densidade: 112/km²</li>
+                                        <li class="list-group-item">Idioma: Português</li>
+                                        <li class="list-group-item">Expectativa: 81,5 anos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Seção de Curiosidades -->
+                    <h2 class="mb-3 border-bottom pb-2">
+                        <a href="#" class="text-decoration-none">
+                            <img src="#" alt="Curiosidades" width="30" height="30" class="me-2"> Curiosidades
+                        </a>
+                    </h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="#" alt="País Mais Antigo" width="30" height="30" class="me-2"> País Mais Antigo
+                                        </a>
+                                    </h3>
+                                    <p class="card-text small">Fronteiras definidas em 1249, é o Estado-nação mais antigo da Europa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="#" alt="Império Global" width="30" height="30" class="me-2"> Império Global
+                                        </a>
+                                    </h3>
+                                    <p class="card-text small">Primeiro império global da história, com territórios em 4 continentes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="#" alt="Língua Portuguesa" width="30" height="30" class="me-2"> Língua Portuguesa
+                                        </a>
+                                    </h3>
+                                    <p class="card-text small">5ª língua mais falada no mundo (260 milhões).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card mb-3 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h3 class="card-title h5">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="#" alt="Ponte Vasco da Gama" width="30" height="30" class="me-2"> Ponte Vasco da Gama
+                                        </a>
+                                    </h3>
+                                    <p class="card-text small">A mais longa da Europa (17,2 km).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- COLUNA LATERAL - PLAYLIST YOUTUBE -->
+            <div class="col-lg-4">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <h2 class="mb-3 border-bottom pb-2">
+                        <a href="#" class="text-decoration-none">
+                            <img src="#" alt="Vídeos" width="30" height="30" class="me-2"> Vídeos sobre Portugal
+                        </a>
+                    </h2>
+                    
+                    <!-- Espaço para o primeiro vídeo -->
+                    <div class="mb-3 ratio ratio-16x9">
+                        <!-- COLE AQUI O PRIMEIRO LINK DE EMBED DO YOUTUBE -->
+                        <!-- Formato: <iframe src="https://www.youtube.com/embed/CODIGO_DO_VIDEO"></iframe> -->
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="min-height: 200px;">
+                            <p class="text-muted">Vídeo 1 será inserido aqui</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Espaço para o segundo vídeo -->
+                    <div class="mb-3 ratio ratio-16x9">
+                        <!-- COLE AQUI O SEGUNDO LINK DE EMBED DO YOUTUBE -->
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="min-height: 200px;">
+                            <p class="text-muted">Vídeo 2 será inserido aqui</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Espaço para o terceiro vídeo -->
+                    <div class="mb-3 ratio ratio-16x9">
+                        <!-- COLE AQUI O TERCEIRO LINK DE EMBED DO YOUTUBE -->
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="min-height: 200px;">
+                            <p class="text-muted">Vídeo 3 será inserido aqui</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Espaço para o quarto vídeo -->
+                    <div class="ratio ratio-16x9">
+                        <!-- COLE AQUI O QUARTO LINK DE EMBED DO YOUTUBE -->
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="min-height: 200px;">
+                            <p class="text-muted">Vídeo 4 será inserido aqui</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
+
+
     <footer class="bg-light py-3 mt-auto">
         <div class="container-fluid"> 
             <div class="row"> 
                 <div class="col-12 text-end">
-                    © 2025 Feito por <strong>Juliano Mancini</strong> Redes Sociais e Informações de Contato |  
-                    <img src="img/Icones/Placeholder.png " alt="" width="30"> 
-                    <img src="img/Icones/Placeholder.png " alt="" width="30">
-                    <img src="img/Icones/Placeholder.png " alt="" width="30"> 
+                    © 2025 Feito por <strong>Juliano Mancini</strong> Redes Sociais
                 </div>
             </div>
         </div>
