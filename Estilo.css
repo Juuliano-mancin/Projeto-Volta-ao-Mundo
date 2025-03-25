@@ -30,3 +30,16 @@ header
 
 #bem-vindo01 {color: green;font-size: 30pt}
 #bem-vindo02 {color: red; font-size: 50pt}
+
+.nav-pills .nav-link:focus,
+.nav-pills .nav-link:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent !important;
+    border: 1px solid #000 !important;
+    color: #28a745 !important; /* Cor verde do text-success */
+}

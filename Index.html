@@ -68,57 +68,66 @@
         </div>
     </nav>
     
-    <main class="container-fluid flex-grow-1">
-        <div class="main-content py-4">
-        <div class="row">
-            <div class="col-6" id="custom-carousel"> 
-                <div class="carousel slide" data-bs-ride="carousel">
+    <main class="container-fluid">
+        <div class="row g-4 py-4">
+            <!-- Carrossel (7 colunas em desktop, 10 em mobile) -->
+            <div class="col-lg-7 col-12 order-lg-1 order-1">
+                <div class="carousel slide" data-bs-ride="carousel" id="mainCarousel">
                     <div class="carousel-inner ratio ratio-16x9">
-                      <div class="carousel-item active h-100">
-                        <img src="img/Carrousel/Carrousel01.jpg" class="d-block w-100 object-fit-cover" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Carrousel/Carrousel02.jpg" class="d-block w-100 object-fit-cover" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Carrousel/Carrousel03.jpg" class="d-block w-100 object-fit-cover" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Carrousel/Carrousel04.jpg" class="d-block w-100 object-fit-cover" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Carrousel/Carrousel05.webp" class="d-block w-100 object-fit-cover" alt="...">
-                      </div>
+                        <div class="carousel-item active h-100">
+                            <img src="img/Carrousel/Carrousel01.jpg" class="d-block w-100 object-fit-cover" alt="Portugal vista aérea">
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="img/Carrousel/Carrousel02.jpg" class="d-block w-100 object-fit-cover" alt="Lisboa à noite">
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="img/Carrousel/Carrousel03.jpg" class="d-block w-100 object-fit-cover" alt="Porto e rio Douro">
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="img/Carrousel/Carrousel04.jpg" class="d-block w-100 object-fit-cover" alt="Algarve">
+                        </div>
+                        <div class="carousel-item h-100">
+                            <img src="img/Carrousel/Carrousel05.webp" class="d-block w-100 object-fit-cover" alt="Sintra">
+                        </div>
                     </div>
-                  </div>  
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
             </div>
             
-            <div class="col-4"> 
-                <h3 id="bem-vindo01">Bem vindo a</h3>
-                <h1 class="fw-bold" id="bem-vindo02">PORTUGAL</h1>
-            
-                <p class="lead mt-3 text-justify">
-                    Onde a história se mistura com paisagens deslumbrantes, sabores inesquecíveis e um povo acolhedor.<br> 
-                    Descubra este cantinho da Europa que encanta o mundo!
-                </p>
+            <!-- Texto (3 colunas em desktop, 10 em mobile) -->
+            <div class="col-lg-3 col-12 order-lg-2 order-2">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <h3 class="text-success">Bem vindo a</h3>
+                    <h1 class="fw-bold text-danger mb-4">PORTUGAL</h1>
                 
-                <p class="lead mt-3 text-justify">
-                    <img src="img/Icones/Castelo.png"  width="45">  
-                    Viaje no tempo na epopeia portuguesa: castelos medievais, navegadores intrépidos e tradições vivas
-                </p>
-                
-                <p class="lead mt-3 text-justify">
-                    <img src="img/Icones/Gastro.png"  width="45">  
-                    Saboreie a alma de Portugal em cada mordida: receitas centenárias que contam nossa história
-                </p>
-                
-                <p class="lead mt-3 text-justify">
-                    <img src="img/Icones/Sunset.png"  width="45">  
-                    Natureza e história em harmonia: praias douradas, vinhedos monumentais e vilas que pararam no tempo
-                </p>
-               
+                    <p class="lead text-justify">
+                        Onde a história se mistura com paisagens deslumbrantes, sabores inesquecíveis e um povo acolhedor.<br> 
+                        Descubra este cantinho da Europa que encanta o mundo!
+                    </p>
+                    
+                    <div class="d-flex align-items-start mt-4">
+                        <img src="img/Icones/Castelo.png" width="45" class="me-3 flex-shrink-0">
+                        <p class="text-justify">Viaje no tempo na epopeia portuguesa: castelos medievais, navegadores intrépidos e tradições vivas</p>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mt-4">
+                        <img src="img/Icones/Gastro.png" width="45" class="me-3 flex-shrink-0">
+                        <p class="text-justify">Saboreie a alma de Portugal em cada mordida: receitas centenárias que contam nossa história</p>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mt-4">
+                        <img src="img/Icones/Sunset.png" width="45" class="me-3 flex-shrink-0">
+                        <p class="text-justify">Natureza e história em harmonia: praias douradas, vinhedos monumentais e vilas que pararam no tempo</p>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </main>
     
