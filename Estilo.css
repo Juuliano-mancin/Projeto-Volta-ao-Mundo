@@ -41,5 +41,6 @@ header
 .nav-pills .nav-link.active {
     background-color: transparent !important;
     border: 1px solid #000 !important;
-    color: #28a745 !important; /* Cor verde do text-success */
+    color: #000000 !important; /* Cor verde do text-success */
+    font-weight: bold;
 }
